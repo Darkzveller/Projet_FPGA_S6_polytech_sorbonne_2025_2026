@@ -1,0 +1,5 @@
+UART & DES Encrypter
+
+Beware : the file "test.txt" is encrypted !
+Do not try to edit or modify it with a text editor...
+It is to be used by Hyperterminal and FPGA board.
