@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Apr 08 13:42:43 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : TP1_BCD
+Top-level Entity Name : TP1_BCD
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 6,059 / 49,760 ( 12 % )
+    Total combinational functions : 6,053 / 49,760 ( 12 % )
+    Dedicated logic registers : 63 / 49,760 ( < 1 % )
+Total registers : 63
+Total pins : 41 / 360 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
