@@ -8,7 +8,10 @@ vsim uart_tx_tb(Bench)
 
 view signals
 add wave *
-
+add wave -position insertpoint  \
+sim:/uart_tx_tb/UART_TX/State
+add wave -position insertpoint  \
+sim:/uart_tx_tb/UART_TX/i
 
 run -all
 wave zoom full

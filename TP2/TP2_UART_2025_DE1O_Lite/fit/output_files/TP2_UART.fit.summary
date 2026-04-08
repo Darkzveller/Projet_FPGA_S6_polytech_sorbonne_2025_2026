@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Apr 08 17:25:38 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : TP2_UART
+Top-level Entity Name : DE_top
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 106 / 49,760 ( < 1 % )
+    Total combinational functions : 102 / 49,760 ( < 1 % )
+    Dedicated logic registers : 52 / 49,760 ( < 1 % )
+Total registers : 52
+Total pins : 19 / 360 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

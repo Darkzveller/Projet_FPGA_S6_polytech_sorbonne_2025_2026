@@ -1,0 +1,129 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/TP_projet/TP2/TP2_UART_2025_DE1O_Lite/simu
+Efdiv
+Z1 w1685477398
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8../src/fdiv.vhd
+Z5 F../src/fdiv.vhd
+l0
+L4
+V?RaZS40=9UelEJ>=glaz@3
+!s100 cfWlYHRDKKnf9I3Lm5LW?3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1775653963
+!i10b 1
+Z8 !s108 1775653963.000000
+Z9 !s90 -reportprogress|300|-93|../src/fdiv.vhd|
+Z10 !s107 ../src/fdiv.vhd|
+!i113 1
+o-93
+Z11 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+Z12 DEx4 work 4 fdiv 0 22 ?RaZS40=9UelEJ>=glaz@3
+l19
+L17
+VW2BCBd^B_AC660Y[_1Enk2
+!s100 geQWe6ekNJYZSD=BJ_`1a1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+o-93
+R11
+Euart_tx
+Z13 w1775653957
+R2
+R3
+R0
+Z14 8../src/uart_tx.vhd
+Z15 F../src/uart_tx.vhd
+l0
+L4
+VU1SQ=FcRDfnX>CH]I]n5Z0
+!s100 <9?AH<Cn0`a76Wiz[Y3063
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|../src/uart_tx.vhd|
+Z17 !s107 ../src/uart_tx.vhd|
+!i113 1
+o-93
+R11
+Artl
+R2
+R3
+Z18 DEx4 work 7 uart_tx 0 22 U1SQ=FcRDfnX>CH]I]n5Z0
+l21
+L16
+V`f7OH8>L<BcYCFW7KLI_A3
+!s100 a:HO`@0Pe@HzQBd`1o2gV2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+o-93
+R11
+Euart_tx_tb
+Z19 w1703257242
+R2
+R3
+R0
+Z20 8uart_tx_tb.vhd
+Z21 Fuart_tx_tb.vhd
+l0
+L4
+VTmF5U6`H[azfU`CX6?SUg1
+!s100 26bRGZo`M9SY]P92ZU5_81
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|uart_tx_tb.vhd|
+Z23 !s107 uart_tx_tb.vhd|
+!i113 1
+o-93
+R11
+Abench
+R18
+R12
+R2
+R3
+Z24 DEx4 work 10 uart_tx_tb 0 22 TmF5U6`H[azfU`CX6?SUg1
+l16
+L7
+Z25 VfgBbhmC[`K_AgndInTfRZ3
+Z26 !s100 cKFFmF35d]QdnRiEj:6aI3
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+o-93
+R11

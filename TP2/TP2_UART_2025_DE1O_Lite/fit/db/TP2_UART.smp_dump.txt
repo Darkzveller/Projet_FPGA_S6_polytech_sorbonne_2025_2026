@@ -1,0 +1,8 @@
+
+State Machine - |DE_top|UART_TX:UART|State
+Name State.E4 State.E3 State.E2 State.E1 State.E0 
+State.E0 0 0 0 0 0 
+State.E1 0 0 0 1 1 
+State.E2 0 0 1 0 1 
+State.E3 0 1 0 0 1 
+State.E4 1 0 0 0 1 
