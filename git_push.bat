@@ -1,2 +1,2 @@
 echo off
-git status && git add . && git commit -m "MAJ de securite " && git push
+git status && git add . && git commit -m "MAJ " && git push
