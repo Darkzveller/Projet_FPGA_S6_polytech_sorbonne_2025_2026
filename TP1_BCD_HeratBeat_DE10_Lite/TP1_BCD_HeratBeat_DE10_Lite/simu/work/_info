@@ -9,85 +9,85 @@ z2
 cModel Technology
 Z0 dH:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/TP_projet/TP1/TP1_BCD_HeratBeat_DE10_Lite/simu
 Ebcd_counter
-Z1 w1774451908
+Z1 w1774451989
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
-Z5 8../src/bcd_counter.vhd
-Z6 F../src/bcd_counter.vhd
+Z5 dH:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/TP_projet/TP1_BCD_HeratBeat_DE10_Lite/TP1_BCD_HeratBeat_DE10_Lite/simu
+Z6 8../src/bcd_counter.vhd
+Z7 F../src/bcd_counter.vhd
 l0
 L17
 VR4DHMD<Bm1Hi4[:14J7cO0
 !s100 3hn7gHV^BPHFV`Uf;IjdB0
-Z7 OV;C;10.5b;63
+Z8 OV;C;10.5b;63
 31
-Z8 !s110 1774451917
+Z9 !s110 1777388572
 !i10b 1
-Z9 !s108 1774451917.000000
-Z10 !s90 -reportprogress|300|-93|../src/bcd_counter.vhd|
-Z11 !s107 ../src/bcd_counter.vhd|
+Z10 !s108 1777388571.000000
+Z11 !s90 -reportprogress|300|-93|../src/bcd_counter.vhd|
+Z12 !s107 ../src/bcd_counter.vhd|
 !i113 1
 o-93
-Z12 tExplicit 1 CvgOpt 0
+Z13 tExplicit 1 CvgOpt 0
 Artl
 R2
 R3
 R4
-Z13 DEx4 work 11 bcd_counter 0 22 R4DHMD<Bm1Hi4[:14J7cO0
+Z14 DEx4 work 11 bcd_counter 0 22 R4DHMD<Bm1Hi4[:14J7cO0
 l38
 L31
-VeMdBXKi<nfzYH<U_i?_Sf3
-!s100 8lz>]g9H8Y:^@9=kzL0kz3
-R7
-31
+VM^UQ9>2:3QId6@Pal1?D`3
+!s100 TGPTmbJGkM7=6iPA;:z6B1
 R8
-!i10b 1
+31
 R9
+!i10b 1
 R10
 R11
+R12
 !i113 1
 o-93
-R12
+R13
 Etb_bcd_counter
-Z14 w1774450969
+Z15 w1774450975
 R2
 R3
 R4
-R0
-Z15 8tb_bcd_counter.vhd
-Z16 Ftb_bcd_counter.vhd
+R5
+Z16 8tb_bcd_counter.vhd
+Z17 Ftb_bcd_counter.vhd
 l0
 L13
 V<MC<Lb4iii7zfnG5mzPbz1
 !s100 Lije>TP2YOI;YYZH^Hhjb1
-R7
+R8
 31
-Z17 !s110 1774451918
-!i10b 1
 R9
-Z18 !s90 -reportprogress|300|-93|tb_bcd_counter.vhd|
-Z19 !s107 tb_bcd_counter.vhd|
+!i10b 1
+Z18 !s108 1777388572.000000
+Z19 !s90 -reportprogress|300|-93|tb_bcd_counter.vhd|
+Z20 !s107 tb_bcd_counter.vhd|
 !i113 1
 o-93
-R12
-Atest
 R13
+Atest
+R14
 R2
 R3
 R4
-Z20 DEx4 work 14 tb_bcd_counter 0 22 <MC<Lb4iii7zfnG5mzPbz1
+Z21 DEx4 work 14 tb_bcd_counter 0 22 <MC<Lb4iii7zfnG5mzPbz1
 l26
 L16
-Z21 V`3=2j8;1[^MTEhi[JWAN;0
-Z22 !s100 7ID8dD2AA1@mAX40nL>hz3
-R7
+Z22 V`3=2j8;1[^MTEhi[JWAN;0
+Z23 !s100 7ID8dD2AA1@mAX40nL>hz3
+R8
 31
-R17
-!i10b 1
 R9
+!i10b 1
 R18
 R19
+R20
 !i113 1
 o-93
-R12
+R13
