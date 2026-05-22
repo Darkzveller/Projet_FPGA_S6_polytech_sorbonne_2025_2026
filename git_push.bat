@@ -1,2 +1,2 @@
 
-git status && git add . && git commit -m "ajout banc de registres + Alu + datapath" && git push
+git status && git add . && git commit -m "ajout sign extension + mul 2 to 1" && git push
