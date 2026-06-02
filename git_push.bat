@@ -1,2 +1,2 @@
 
-git status && git add . && git commit -m "partir 3 fini" && git push
+git status && git add . && git commit -m "rectification partir 2 fini pas la 3" && git push
