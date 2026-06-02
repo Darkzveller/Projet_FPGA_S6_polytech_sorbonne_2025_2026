@@ -15,7 +15,7 @@ end ALU;
 
 architecture Behavioral of ALU is
     -- Signal intermédiaire pour faciliter le calcul des drapeaux
-    signal result_internal : STD_LOGIC_VECTOR (31 downto 0):=0;
+    signal result_internal : STD_LOGIC_VECTOR (31 downto 0):= (others => '0');
 
 begin
 
