@@ -18,7 +18,7 @@ entity DataPath is
         ALUSrc  : IN  STD_LOGIC;        -- Commande du Mux ALU
         MemWr   : IN  STD_LOGIC;        -- Write Enable Mémoire
         MemToReg: IN  STD_LOGIC;        -- Commande du Mux sortie
-        ImmExtin : STD_LOGIC_VECTOR(7 downto 0):= (others =>'0')
+        ImmExtin : IN STD_LOGIC_VECTOR(7 downto 0)
     );
 end DataPath;
 

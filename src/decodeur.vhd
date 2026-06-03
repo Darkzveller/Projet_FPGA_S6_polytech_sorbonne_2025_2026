@@ -81,7 +81,7 @@ begin
   ---------------------------------------------------------------------------
   -- Processus 2 : Donner la valeur des commandes des registres et opérateurs
   ---------------------------------------------------------------------------
-  process (instruction flag_N)
+  process (instruction, instr_courante)
   begin
 
     case instr_courante is
@@ -118,7 +118,7 @@ begin
         RegSel  <= '1'; -- Commande RegSel pour router l'adresse de Rd vers le port d'adresse de lecture du banc
         ALUSrc  <= '1'; -- Calcul d'adresse
         ALUCtrl <= "000";
-        RegAff  <= '1'; -- Signal d'affichage demandé par le sujet en cas de STR !
+        RegAff  <= '1'; 
 
       when BAL =>
         nPC_SEL <= '1'; -- Le multiplexeur du PC choisit la branche du saut (PC + 1 + Offset)
