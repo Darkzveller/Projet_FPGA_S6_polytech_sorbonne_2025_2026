@@ -35,6 +35,9 @@ architecture rtl of proc_mono_cycle is
     signal s_MemWr       : std_logic;
     signal s_RegAff      : std_logic;
 
+    signal s_reset_inv : std_logic;
+signal s_N_ALU_out : std_logic;
+signal s_Z_ALU_out : std_logic;
 begin
 
     -- Extraction des champs d'adresse de l'instruction
@@ -45,10 +48,11 @@ begin
     -- Regroupement des drapeaux pour le Décodeur
     s_Flags_NZCV <= s_N_flag & s_Z_flag& "00"; 
 
+    s_reset_inv <= (RST);
     Inst_UNIT_GEST_INSTRUCTION : entity work.UNIT_GESTION_INSTRUCTION 
         port map (
             CLK         => CLK,
-            Reset       => RST,
+            Reset       => s_reset_inv,
             nPCsel      => s_nPC_sel,
             Offset      => s_instruction(23 downto 0), 
             Instruction => s_instruction
@@ -81,21 +85,32 @@ begin
             S   => s_Rb_muxed
         );
 
-    Inst_DATA_PATH : entity work.DataPath 
-        port map(
-            CLK       => CLK,
-            RST       => RST,
-            RegWr     => s_RegWr,
-            RW        => s_Rd,
-            RA        => s_Rn,
-            RB        => s_Rb_muxed,
-            ALUCtr    => s_ALUCtrl(1 downto 0), 
-            N_flag    => s_N_flag,
-            Z_flag    => s_Z_flag,
-            ALUSrc    => s_ALUSrc,
-            MemWr     => s_MemWr,
-            MemToReg  => s_MemToReg,
-            ImmExtin  => s_instruction(7 downto 0) 
-        );
-
+Inst_DATA_PATH : entity work.DataPath 
+    port map(
+        CLK       => CLK,
+        RST       => s_reset_inv,
+        RegWr     => s_RegWr,
+        RW        => s_Rd,
+        RA        => s_Rn,
+        RB        => s_Rb_muxed,
+        ALUCtr    => s_ALUCtrl(1 downto 0), 
+        N_flag    => s_N_ALU_out, -- Modification ici
+        Z_flag    => s_Z_ALU_out, -- Modification ici
+        ALUSrc    => s_ALUSrc,
+        MemWr     => s_MemWr,
+        MemToReg  => s_MemToReg,
+        ImmExtin  => s_instruction(7 downto 0) 
+    );
+process(CLK, RST)
+    begin
+        if RST = '1' then
+            s_N_flag <= '0';
+            s_Z_flag <= '0';
+        elsif rising_edge(CLK) then
+            if s_PSREn = '1' then -- Activé uniquement lors d'un CMP !
+                s_N_flag <= s_N_ALU_out; -- On mémorise le Flag N
+                s_Z_flag <= s_Z_ALU_out; -- On mémorise le Flag Z
+            end if;
+        end if;
+    end process;
 end architecture;

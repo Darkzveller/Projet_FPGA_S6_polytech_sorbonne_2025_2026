@@ -45,16 +45,32 @@ begin
     end if;
   end process;
 
-  process (nPCsel, PC_reg)
-  begin
-    if nPCsel = '0' then
-      -- Si nPCsel = '0' alors PC = PC +1
-      PC_suivant <= std_logic_vector(PC_plus_1);
+-- process (nPCsel, PC_plus_1, Extension_Offset)  begin
+--     if nPCsel = '0' then
+--       -- Si nPCsel = '0' alors PC = PC +1
+--       PC_suivant <= std_logic_vector(PC_plus_1);
+--     else
+--       -- Si nPCsel = '1' alors PC = PC + 1 + Offset
+--       -- PC_suivant <= std_logic_vector(PC_plus_1 + unsigned(Extension_Offset));
+    
+--     PC_suivant <= std_logic_vector(signed(PC_plus_1) + signed(Extension_Offset));
+--   end if;
+--   end process;
+process (nPCsel, PC_plus_1, Extension_Offset)  
+  variable PC_saut : signed(31 downto 0);
+begin
+  if nPCsel = '0' then
+    PC_suivant <= std_logic_vector(PC_plus_1);
+  else
+    -- Calcul intermédiaire signé
+    PC_saut := signed(PC_plus_1) + signed(Extension_Offset);
+    
+    -- Sécurité anti-crash : on s'assure que le PC ne devienne jamais négatif
+    if PC_saut < 0 then
+      PC_suivant <= (others => '0');
     else
-      -- Si nPCsel = '1' alors PC = PC + 1 + Offset
-      PC_suivant <= std_logic_vector(PC_plus_1 + unsigned(Extension_Offset));
+      PC_suivant <= std_logic_vector(PC_saut);
     end if;
-  end process;
-
-  PC_plus_1 <= unsigned(PC_reg) + 1;
+  end if;
+end process;  PC_plus_1 <= unsigned(PC_reg) + 1;
 end architecture;

@@ -37,9 +37,7 @@ begin
         RST <= '1';
         wait for CLK_PERIOD * 2;
         RST <= '0';
-        wait for 500 ns;
-
-        wait;
+       wait;
     end process;
 
 end Behavioral;
