@@ -70,7 +70,7 @@ add wave -radix hexadecimal -label "R1 (Pointeur)"     UUT/Inst_DATA_PATH/Inst_B
 add wave -radix hexadecimal -label "R2 (Accumulateur)" UUT/Inst_DATA_PATH/Inst_BANC_REG/Banc(2)
 
 # 5. Lancement de l'exécution
-run 1000 ns
+run 3000 ns
 
 # Ajustement de la fenêtre de visualisation
 wave zoomfull

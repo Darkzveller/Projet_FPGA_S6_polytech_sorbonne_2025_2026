@@ -1,0 +1,515 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle
+Ealu
+Z1 w1779454336
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8src/ALU.vhd
+Z6 Fsrc/ALU.vhd
+l0
+L5
+VaTTSoD]S<U96f@fZ8IO8Z2
+!s100 Qmj[lG2=6:1g2DS2H=V<z1
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1781177521
+!i10b 1
+Z9 !s108 1781177520.000000
+Z10 !s90 -93|src/instruction_memory.vhd|src/SIGN_EXTENSION.vhd|src/UNIT_GESTION_INSTRUCTION.vhd|src/ALU.vhd|src/banc_registre.vhd|src/memory_data.vhd|src/MUL_2_TO_1.vhd|src/DataPath.vhd|src/DECODEUR.vhd|src/proc_mono_cycle.vhd|simu/tb_proc_mono_cycle.vhd|simu/tb_datapathV2.vhd|
+Z11 !s107 simu/tb_datapathV2.vhd|simu/tb_proc_mono_cycle.vhd|src/proc_mono_cycle.vhd|src/DECODEUR.vhd|src/DataPath.vhd|src/MUL_2_TO_1.vhd|src/memory_data.vhd|src/banc_registre.vhd|src/ALU.vhd|src/UNIT_GESTION_INSTRUCTION.vhd|src/SIGN_EXTENSION.vhd|src/instruction_memory.vhd|
+!i113 1
+o-93
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z13 DEx4 work 3 alu 0 22 aTTSoD]S<U96f@fZ8IO8Z2
+l20
+L16
+Z14 VEo4QEIOgndP?Oj_7EdlOA1
+Z15 !s100 A7?^nlWRPQa0JYU9`6EMT0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Ebanc_registre
+Z16 w1778486619
+R2
+R3
+R4
+R0
+Z17 8src/banc_registre.vhd
+Z18 Fsrc/banc_registre.vhd
+l0
+L5
+VQFB]e__[:0`9FR^>cFY[?3
+!s100 2Hj5I`oU_75_?YOD;I[PY2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Abehavioral
+R2
+R3
+R4
+Z19 DEx4 work 13 banc_registre 0 22 QFB]e__[:0`9FR^>cFY[?3
+l38
+L19
+Z20 VoidJm;YS07aC>9Fd6fXc_1
+Z21 !s100 BbBXcCU5IT3dl=i]HR?c<0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Edata_memory
+Z22 w1781078109
+R2
+R3
+R4
+R0
+Z23 8src/memory_data.vhd
+Z24 Fsrc/memory_data.vhd
+l0
+L5
+VTNEXIlnO`1ed^i_IdM07i2
+!s100 J2_ef;ILbM7]^LLOkaI__1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Abehavioral
+R2
+R3
+R4
+Z25 DEx4 work 11 data_memory 0 22 TNEXIlnO`1ed^i_IdM07i2
+l37
+L17
+Z26 VCOQKi2lJ_7C54[nbjcLdZ0
+Z27 !s100 Nn=_emhSS^W>QMYmBSzXL3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Edatapath
+Z28 w1781177514
+R2
+R3
+R4
+R0
+Z29 8src/DataPath.vhd
+Z30 Fsrc/DataPath.vhd
+l0
+L5
+V^cg0h:Cb2_lm82H<CXc4;3
+!s100 ljBYRL5Qai=J6fU==:GWc2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Astructural
+Z31 DEx4 work 14 sign_extension 0 22 de0WKW]1;H3JRl6cOUc1g0
+R25
+Z32 DEx4 work 10 mul_2_to_1 0 22 4Y_0jSNz0EeY2dVC_2?kC1
+R13
+R19
+R2
+R3
+R4
+Z33 DEx4 work 8 datapath 0 22 ^cg0h:Cb2_lm82H<CXc4;3
+l40
+L25
+VYL:<FYYP?m3^gb@R:R7Z82
+!s100 Y5HFffBWDCCA0A[RhCXzk0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Edecodeur
+Z34 w1781177412
+R2
+R3
+R4
+R0
+Z35 8src/DECODEUR.vhd
+Z36 Fsrc/DECODEUR.vhd
+l0
+L5
+Ve[Z]eJG?CF=0UoPcHOHo33
+!s100 z^I>mb2@2d6B9V<cH3LkD2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Artl
+R2
+R3
+R4
+Z37 DEx4 work 8 decodeur 0 22 e[Z]eJG?CF=0UoPcHOHo33
+l31
+L22
+Z38 VA?nT2gUX;:e?m_oG5NYUM2
+Z39 !s100 <IG41OLoV[UM<U;OMH^E23
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Einstruction_memory
+Z40 w1781076966
+R2
+R3
+R4
+R0
+Z41 8src/instruction_memory.vhd
+Z42 Fsrc/instruction_memory.vhd
+l0
+L4
+VS^LoWfL3<44XSIh7daPh_0
+!s100 B4o`Nmc74i^iCV3oAF7?K0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Artl
+R2
+R3
+R4
+Z43 DEx4 work 18 instruction_memory 0 22 S^LoWfL3<44XSIh7daPh_0
+l42
+L11
+Z44 VLDPOK:5f?J4IeYLEa<5k83
+Z45 !s100 =ZO0Ch;i]g=HNSPRjj?P<2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Emul_2_to_1
+Z46 w1779452574
+R2
+R3
+R4
+R0
+Z47 8src/MUL_2_TO_1.vhd
+Z48 Fsrc/MUL_2_TO_1.vhd
+l0
+L5
+V4Y_0jSNz0EeY2dVC_2?kC1
+!s100 g@X3mg:`lb0fGG7zdiDSQ3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Abehavioral
+R2
+R3
+R4
+R32
+l19
+L17
+Z49 Vm:z5<aNdU8hkkm<HJ`1BL0
+Z50 !s100 aKR<RW2F72R`VS=2@f2>_1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Eproc_mono_cycle
+Z51 w1781177516
+R2
+R3
+R4
+R0
+Z52 8src/proc_mono_cycle.vhd
+Z53 Fsrc/proc_mono_cycle.vhd
+l0
+L5
+VllZ[PCYiRk7Iim]JCMTi03
+!s100 Rm@R7:M0UWi:R<NgL9OlT2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Artl
+R33
+R32
+R37
+Z54 DEx4 work 24 unit_gestion_instruction 0 22 `oMS6UM6>Vj68F@n]FM9c0
+R2
+R3
+R4
+Z55 DEx4 work 15 proc_mono_cycle 0 22 llZ[PCYiRk7Iim]JCMTi03
+l41
+L12
+V9;4aH07iS;4m1lMP]R;;A0
+!s100 LBi@bH_U2e@CVK]9KoG9B1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Esign_extension
+Z56 w1780992746
+R2
+R3
+R4
+R0
+Z57 8src/SIGN_EXTENSION.vhd
+Z58 Fsrc/SIGN_EXTENSION.vhd
+l0
+L5
+Vde0WKW]1;H3JRl6cOUc1g0
+!s100 336nzVbX9UKfT63mLdD@e2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Abehavioral
+R2
+R3
+R4
+R31
+l18
+L16
+Z59 VdMcU<R^RdH^OZV0dHd<jb1
+Z60 !s100 <C0U1h4R`_>G3Z5;ZY;l81
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Etb_datapathv2
+Z61 w1779463107
+R2
+R3
+R4
+R0
+Z62 8simu/tb_datapathV2.vhd
+Z63 Fsimu/tb_datapathV2.vhd
+l0
+L5
+V3meHKlR??fSU2OkO`TFB62
+!s100 Hnz__f8DM7<3iQIKCA@]N1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Abehavior
+R33
+R2
+R3
+R4
+DEx4 work 13 tb_datapathv2 0 22 3meHKlR??fSU2OkO`TFB62
+l37
+L8
+VAfFD09Jg9kNh=kRAG^3321
+!s100 bOGWT?NC@5mMFZI7<^TFO3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Etb_proc_mono_cycle
+Z64 w1780989984
+R2
+R3
+R4
+R0
+Z65 8simu/tb_proc_mono_cycle.vhd
+Z66 Fsimu/tb_proc_mono_cycle.vhd
+l0
+L5
+V;>ni]@OkfczG><H@HK<2d1
+!s100 [fAY;>QMLX@`aS2Jd2D3N0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Abehavioral
+R55
+R2
+R3
+R4
+Z67 DEx4 work 18 tb_proc_mono_cycle 0 22 ;>ni]@OkfczG><H@HK<2d1
+l18
+L9
+Z68 Vz4F2chEBgdi8k4TZ=MGCf3
+Z69 !s100 K23:ImmKKbAEe3TnF7`SE1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Eunit_gestion_instruction
+Z70 w1781078435
+R2
+R3
+R4
+R0
+Z71 8src/UNIT_GESTION_INSTRUCTION.vhd
+Z72 Fsrc/UNIT_GESTION_INSTRUCTION.vhd
+l0
+L5
+V`oMS6UM6>Vj68F@n]FM9c0
+!s100 Kg362QVXLkVjZ`iiJLGdR1
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12
+Artl
+R31
+R43
+R2
+R3
+R4
+R54
+l20
+L15
+Z73 VXh@;i21UC?b8n>d1SeziA0
+Z74 !s100 FDTjkcHRmdh3TgO9N>B4N2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+o-93
+R12

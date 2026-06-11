@@ -1,0 +1,110 @@
+# vsim -c -do "C:\Users\elkat\.gemini\antigravity-ide\brain\4fcfa563-c23d-4817-9289-dff71cd95e2e\scratch\trace_proc.do" tb_proc_mono_cycle 
+# Start time: 13:32:06 on Jun 11,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_proc_mono_cycle(behavioral)
+# Loading work.proc_mono_cycle(rtl)
+# Loading work.unit_gestion_instruction(rtl)
+# Loading work.instruction_memory(rtl)
+# Loading work.sign_extension(behavioral)
+# Loading work.decodeur(rtl)
+# Loading work.mul_2_to_1(behavioral)
+# Loading work.datapath(structural)
+# Loading work.banc_registre(behavioral)
+# Loading work.alu(behavioral)
+# Loading work.data_memory(behavioral)
+# do {C:\Users\elkat\.gemini\antigravity-ide\brain\4fcfa563-c23d-4817-9289-dff71cd95e2e\scratch\trace_proc.do}
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_proc_mono_cycle/UUT/Inst_DATA_PATH/Inst_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_proc_mono_cycle/UUT/Inst_DATA_PATH/Inst_BANC_REG
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_proc_mono_cycle/UUT/Inst_DATA_PATH/Inst_BANC_REG
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /tb_proc_mono_cycle/UUT/Inst_DATA_PATH/Inst_MEM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 4  Instance: /tb_proc_mono_cycle/UUT/Inst_DATA_PATH/Inst_MEM
+# Cycle 0 | PC: 00000000 | Instr: E3A01010 | R0: 00000000 | R1: 00000000 | R2: 00000000 | N: 0
+# Cycle 1 | PC: 00000001 | Instr: E3A02000 | R0: 00000000 | R1: 00000010 | R2: 00000000 | N: 0
+# Cycle 2 | PC: 00000002 | Instr: E4110000 | R0: 00000000 | R1: 00000010 | R2: 00000000 | N: 0
+# Cycle 3 | PC: 00000003 | Instr: E0822000 | R0: 00000001 | R1: 00000010 | R2: 00000000 | N: 0
+# Cycle 4 | PC: 00000004 | Instr: E2811001 | R0: 00000001 | R1: 00000010 | R2: 00000001 | N: 0
+# Cycle 5 | PC: 00000005 | Instr: E351001A | R0: 00000001 | R1: 00000011 | R2: 00000001 | N: 0
+# Cycle 6 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000001 | R1: 00000011 | R2: 00000001 | N: 1
+# Cycle 7 | PC: 00000002 | Instr: E4110000 | R0: 00000001 | R1: 00000011 | R2: 00000001 | N: 1
+# Cycle 8 | PC: 00000003 | Instr: E0822000 | R0: 00000002 | R1: 00000011 | R2: 00000001 | N: 1
+# Cycle 9 | PC: 00000004 | Instr: E2811001 | R0: 00000002 | R1: 00000011 | R2: 00000003 | N: 1
+# Cycle 10 | PC: 00000005 | Instr: E351001A | R0: 00000002 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 11 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000002 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 12 | PC: 00000002 | Instr: E4110000 | R0: 00000002 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 13 | PC: 00000003 | Instr: E0822000 | R0: 00000003 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 14 | PC: 00000004 | Instr: E2811001 | R0: 00000003 | R1: 00000012 | R2: 00000006 | N: 1
+# Cycle 15 | PC: 00000005 | Instr: E351001A | R0: 00000003 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 16 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000003 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 17 | PC: 00000002 | Instr: E4110000 | R0: 00000003 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 18 | PC: 00000003 | Instr: E0822000 | R0: 00000004 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 19 | PC: 00000004 | Instr: E2811001 | R0: 00000004 | R1: 00000013 | R2: 0000000A | N: 1
+# Cycle 20 | PC: 00000005 | Instr: E351001A | R0: 00000004 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 21 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000004 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 22 | PC: 00000002 | Instr: E4110000 | R0: 00000004 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 23 | PC: 00000003 | Instr: E0822000 | R0: 00000005 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 24 | PC: 00000004 | Instr: E2811001 | R0: 00000005 | R1: 00000014 | R2: 0000000F | N: 1
+# Cycle 25 | PC: 00000005 | Instr: E351001A | R0: 00000005 | R1: 00000015 | R2: 0000000F | N: 1
+# Cycle 26 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000005 | R1: 00000015 | R2: 0000000F | N: 1
+# Cycle 27 | PC: 00000002 | Instr: E4110000 | R0: 00000005 | R1: 00000015 | R2: 0000000F | N: 1
+# Cycle 28 | PC: 00000003 | Instr: E0822000 | R0: 00000006 | R1: 00000015 | R2: 0000000F | N: 1
+# Cycle 29 | PC: 00000004 | Instr: E2811001 | R0: 00000006 | R1: 00000015 | R2: 00000015 | N: 1
+# Cycle 30 | PC: 00000005 | Instr: E351001A | R0: 00000006 | R1: 00000016 | R2: 00000015 | N: 1
+# Cycle 31 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000006 | R1: 00000016 | R2: 00000015 | N: 1
+# Cycle 32 | PC: 00000002 | Instr: E4110000 | R0: 00000006 | R1: 00000016 | R2: 00000015 | N: 1
+# Cycle 33 | PC: 00000003 | Instr: E0822000 | R0: 00000007 | R1: 00000016 | R2: 00000015 | N: 1
+# Cycle 34 | PC: 00000004 | Instr: E2811001 | R0: 00000007 | R1: 00000016 | R2: 0000001C | N: 1
+# Cycle 35 | PC: 00000005 | Instr: E351001A | R0: 00000007 | R1: 00000017 | R2: 0000001C | N: 1
+# Cycle 36 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000007 | R1: 00000017 | R2: 0000001C | N: 1
+# Cycle 37 | PC: 00000002 | Instr: E4110000 | R0: 00000007 | R1: 00000017 | R2: 0000001C | N: 1
+# Cycle 38 | PC: 00000003 | Instr: E0822000 | R0: 00000008 | R1: 00000017 | R2: 0000001C | N: 1
+# Cycle 39 | PC: 00000004 | Instr: E2811001 | R0: 00000008 | R1: 00000017 | R2: 00000024 | N: 1
+# Cycle 40 | PC: 00000005 | Instr: E351001A | R0: 00000008 | R1: 00000018 | R2: 00000024 | N: 1
+# Cycle 41 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000008 | R1: 00000018 | R2: 00000024 | N: 1
+# Cycle 42 | PC: 00000002 | Instr: E4110000 | R0: 00000008 | R1: 00000018 | R2: 00000024 | N: 1
+# Cycle 43 | PC: 00000003 | Instr: E0822000 | R0: 00000009 | R1: 00000018 | R2: 00000024 | N: 1
+# Cycle 44 | PC: 00000004 | Instr: E2811001 | R0: 00000009 | R1: 00000018 | R2: 0000002D | N: 1
+# Cycle 45 | PC: 00000005 | Instr: E351001A | R0: 00000009 | R1: 00000019 | R2: 0000002D | N: 1
+# Cycle 46 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000009 | R1: 00000019 | R2: 0000002D | N: 1
+# Cycle 47 | PC: 00000002 | Instr: E4110000 | R0: 00000009 | R1: 00000019 | R2: 0000002D | N: 1
+# Cycle 48 | PC: 00000003 | Instr: E0822000 | R0: 0000000A | R1: 00000019 | R2: 0000002D | N: 1
+# Cycle 49 | PC: 00000004 | Instr: E2811001 | R0: 0000000A | R1: 00000019 | R2: 00000037 | N: 1
+# Cycle 50 | PC: 00000005 | Instr: E351001A | R0: 0000000A | R1: 0000001A | R2: 00000037 | N: 1
+# Cycle 51 | PC: 00000006 | Instr: BAFFFFFB | R0: 0000000A | R1: 0000001A | R2: 00000037 | N: 0
+# Cycle 52 | PC: 00000007 | Instr: E4012000 | R0: 0000000A | R1: 0000001A | R2: 00000037 | N: 0
+# Cycle 53 | PC: 00000008 | Instr: EAFFFFF7 | R0: 0000000A | R1: 0000001A | R2: 00000037 | N: 0
+# Cycle 54 | PC: 00000000 | Instr: E3A01010 | R0: 0000000A | R1: 0000001A | R2: 00000037 | N: 0
+# Cycle 55 | PC: 00000001 | Instr: E3A02000 | R0: 0000000A | R1: 00000010 | R2: 00000037 | N: 0
+# Cycle 56 | PC: 00000002 | Instr: E4110000 | R0: 0000000A | R1: 00000010 | R2: 00000000 | N: 0
+# Cycle 57 | PC: 00000003 | Instr: E0822000 | R0: 00000001 | R1: 00000010 | R2: 00000000 | N: 0
+# Cycle 58 | PC: 00000004 | Instr: E2811001 | R0: 00000001 | R1: 00000010 | R2: 00000001 | N: 0
+# Cycle 59 | PC: 00000005 | Instr: E351001A | R0: 00000001 | R1: 00000011 | R2: 00000001 | N: 0
+# Cycle 60 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000001 | R1: 00000011 | R2: 00000001 | N: 1
+# Cycle 61 | PC: 00000002 | Instr: E4110000 | R0: 00000001 | R1: 00000011 | R2: 00000001 | N: 1
+# Cycle 62 | PC: 00000003 | Instr: E0822000 | R0: 00000002 | R1: 00000011 | R2: 00000001 | N: 1
+# Cycle 63 | PC: 00000004 | Instr: E2811001 | R0: 00000002 | R1: 00000011 | R2: 00000003 | N: 1
+# Cycle 64 | PC: 00000005 | Instr: E351001A | R0: 00000002 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 65 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000002 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 66 | PC: 00000002 | Instr: E4110000 | R0: 00000002 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 67 | PC: 00000003 | Instr: E0822000 | R0: 00000003 | R1: 00000012 | R2: 00000003 | N: 1
+# Cycle 68 | PC: 00000004 | Instr: E2811001 | R0: 00000003 | R1: 00000012 | R2: 00000006 | N: 1
+# Cycle 69 | PC: 00000005 | Instr: E351001A | R0: 00000003 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 70 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000003 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 71 | PC: 00000002 | Instr: E4110000 | R0: 00000003 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 72 | PC: 00000003 | Instr: E0822000 | R0: 00000004 | R1: 00000013 | R2: 00000006 | N: 1
+# Cycle 73 | PC: 00000004 | Instr: E2811001 | R0: 00000004 | R1: 00000013 | R2: 0000000A | N: 1
+# Cycle 74 | PC: 00000005 | Instr: E351001A | R0: 00000004 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 75 | PC: 00000006 | Instr: BAFFFFFB | R0: 00000004 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 76 | PC: 00000002 | Instr: E4110000 | R0: 00000004 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 77 | PC: 00000003 | Instr: E0822000 | R0: 00000005 | R1: 00000014 | R2: 0000000A | N: 1
+# Cycle 78 | PC: 00000004 | Instr: E2811001 | R0: 00000005 | R1: 00000014 | R2: 0000000F | N: 1
+# Cycle 79 | PC: 00000005 | Instr: E351001A | R0: 00000005 | R1: 00000015 | R2: 0000000F | N: 1
+# End time: 13:32:10 on Jun 11,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 5

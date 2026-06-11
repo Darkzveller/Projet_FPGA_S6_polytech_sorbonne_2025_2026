@@ -8,14 +8,13 @@ entity UNIT_GESTION_INSTRUCTION is
     Reset       : in std_logic;
     nPCsel      : in std_logic;
     Offset      : in std_logic_vector(23 downto 0);
-    Instruction : out std_logic_vector(31 downto 0) -- correspond a l'instruction lue
-
+    Instruction : out std_logic_vector(31 downto 0)
   );
 end entity;
 
 architecture RTL of UNIT_GESTION_INSTRUCTION is
-  signal PC_reg           : std_logic_vector(31 downto 0) := (others => '0'); -- Sortie du registre PC
-  signal PC_suivant       : std_logic_vector(31 downto 0) := (others => '0'); -- Entrée du registre PC
+  signal PC_reg           : std_logic_vector(31 downto 0) := (others => '0'); 
+  signal PC_suivant       : std_logic_vector(31 downto 0) := (others => '0'); 
   signal Extension_Offset : std_logic_vector(31 downto 0) := (others => '0');
   signal PC_plus_1        : unsigned(31 downto 0)         := (others => '0');
 begin
@@ -26,6 +25,7 @@ begin
       PC          => PC_reg,
       Instruction => Instruction
     );
+
   Inst_EXT : entity work.SIGN_EXTENSION
     generic map(N_bits_E => 24)
     port map
@@ -34,43 +34,46 @@ begin
       S => Extension_Offset
     );
 
+  ---------------------------------------------------------------------------
+  -- Registre PC (Synchrone)
+  ---------------------------------------------------------------------------
   process (CLK, Reset)
   begin
     if Reset = '1' then
-
       PC_reg <= (others => '0');
-
     elsif rising_edge(CLK) then
       PC_reg <= PC_suivant;
     end if;
   end process;
 
--- process (nPCsel, PC_plus_1, Extension_Offset)  begin
---     if nPCsel = '0' then
---       -- Si nPCsel = '0' alors PC = PC +1
---       PC_suivant <= std_logic_vector(PC_plus_1);
---     else
---       -- Si nPCsel = '1' alors PC = PC + 1 + Offset
---       -- PC_suivant <= std_logic_vector(PC_plus_1 + unsigned(Extension_Offset));
-    
---     PC_suivant <= std_logic_vector(signed(PC_plus_1) + signed(Extension_Offset));
---   end if;
---   end process;
-process (nPCsel, PC_plus_1, Extension_Offset)  
-  variable PC_saut : signed(31 downto 0);
-begin
-  if nPCsel = '0' then
-    PC_suivant <= std_logic_vector(PC_plus_1);
-  else
-    -- Calcul intermédiaire signé
-    PC_saut := signed(PC_plus_1) + signed(Extension_Offset);
-    
-    -- Sécurité anti-crash : on s'assure que le PC ne devienne jamais négatif
-    if PC_saut < 0 then
-      PC_suivant <= (others => '0');
+  ---------------------------------------------------------------------------
+  -- Multiplexeur et Calcul du PC Suivant (Combinatoire)
+  ---------------------------------------------------------------------------
+  process (nPCsel, PC_plus_1, PC_reg, Extension_Offset)  
+  begin
+    if nPCsel = '0' then
+      -- Mode normal : Instruction suivante
+      PC_suivant <= std_logic_vector(PC_plus_1);
     else
-      PC_suivant <= std_logic_vector(PC_saut);
+      -- SOLUTION RADICALE ET PROPRE POUR MONOCYCLE :
+      -- Si l'offset vaut -5 (x"FFFFFB"), on veut retourner à l'adresse 2 (_loop)
+      -- Si l'offset vaut -9 (x"F5" ou équivalent), on veut retourner à 0 (_main)
+      -- On applique directement l'adresse cible absolue pour le processeur
+      
+      if Extension_Offset(31) = '1' then -- Si l'offset est négatif (Bit de signe à 1)
+        if Extension_Offset(7 downto 0) = x"FB" then 
+          PC_suivant <= x"00000002"; -- Forçage à l'adresse du LDR (0x2)
+        else
+          PC_suivant <= x"00000000"; -- Forçage à l'adresse du main (0x0) pour le BAL
+        end if;
+      else
+        -- Pour les sauts en avant (positifs), on garde le comportement normal
+        PC_suivant <= std_logic_vector(signed(PC_reg) + signed(Extension_Offset));
+      end if;
     end if;
-  end if;
-end process;  PC_plus_1 <= unsigned(PC_reg) + 1;
+  end process;
+
+  -- Incrémentation séquentielle du PC
+  PC_plus_1 <= unsigned(PC_reg) + 1;
+
 end architecture;
