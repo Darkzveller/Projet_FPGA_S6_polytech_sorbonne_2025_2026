@@ -18,7 +18,9 @@ entity DataPath is
         ALUSrc  : IN  STD_LOGIC;        -- Commande du Mux ALU
         MemWr   : IN  STD_LOGIC;        -- Write Enable Mémoire
         MemToReg: IN  STD_LOGIC;        -- Commande du Mux sortie
-        ImmExtin : IN STD_LOGIC_VECTOR(7 downto 0)
+        ImmExtin : IN STD_LOGIC_VECTOR(7 downto 0);
+        RegAff_en : IN STD_LOGIC;
+        RegAff_out : OUT STD_LOGIC_VECTOR(31 downto 0)
     );
 end DataPath;
 
@@ -36,6 +38,7 @@ architecture Structural of DataPath is
     signal ImmExt_Mux_out : STD_LOGIC_VECTOR(31 downto 0):= (others =>'0');
 
     signal DataOut : STD_LOGIC_VECTOR(31 downto 0):= (others =>'0');
+    signal RegAff_reg : STD_LOGIC_VECTOR(31 downto 0) := (others =>'0');
 
 begin
 
@@ -99,7 +102,17 @@ begin
         S  => ImmExtout
     );
 
+    process(CLK, RST)
+    begin
+        if RST = '1' then
+            RegAff_reg <= (others => '0');
+        elsif rising_edge(CLK) then
+            if RegAff_en = '1' then
+                RegAff_reg <= BusB;
+            end if;
+        end if;
+    end process;
 
-
+    RegAff_out <= RegAff_reg;
 
 end architecture;

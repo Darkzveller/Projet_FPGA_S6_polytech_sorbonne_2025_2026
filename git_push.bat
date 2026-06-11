@@ -1,2 +1,2 @@
 
-git status && git add . && git commit -m "Decodeur fini mais non tester et proc mono cycle en cours de construction" && git push
+git status && git add . && git commit -m "projet quartus + ajout de l'affichage + test de l'affichage via modelsim + modif datapath & procmonocycle pour traiter l'affichage" && git push

@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity tb_proc_mono_cycle is
--- L'entité d'un banc de test est toujours vide
+-- L'entitÃ© d'un banc de test est toujours vide
 end tb_proc_mono_cycle;
 
 architecture Behavioral of tb_proc_mono_cycle is
@@ -11,15 +11,18 @@ architecture Behavioral of tb_proc_mono_cycle is
     -- Signaux pour relier au processeur global
     signal CLK : STD_LOGIC := '0';
     signal RST : STD_LOGIC := '0';
+    signal POL : STD_LOGIC := '0';
 
-    -- Constante pour définir la période de l'horloge (ex: 50 MHz -> 20 ns)
+
+    -- Constante pour dÃ©finir la pÃ©riode de l'horloge (ex: 50 MHz -> 20 ns)
     constant CLK_PERIOD : time := 20 ns;
 
 begin
     UUT: entity work.proc_mono_cycle
         port map (
             CLK => CLK,
-            RST => RST
+            RST => RST,
+            Pol_HEX => POL
         );
 
     clk_process : process
@@ -34,9 +37,9 @@ begin
 
     stim_proc: process
     begin
-        RST <= '1';
+        RST <= '1'; -- active-low reset
         wait for CLK_PERIOD * 2;
-        RST <= '0';
+        RST <= '1';
        wait;
     end process;
 

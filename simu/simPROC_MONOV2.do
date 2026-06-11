@@ -16,6 +16,7 @@ vcom -93 ../src/memory_data.vhd
 vcom -93 ../src/MUL_2_TO_1.vhd
 vcom -93 ../src/DataPath.vhd
 vcom -93 ../src/DECODEUR.vhd
+vcom -93 ../src/SEVEN_SEG.vhd
 
 # Compilation du Top-Level et du Testbench
 vcom -93 ../src/proc_mono_cycle.vhd
@@ -68,6 +69,14 @@ add wave -divider " Suivi des Registres de Travail "
 add wave -radix hexadecimal -label "R0 (Donnée LDR)"   UUT/Inst_DATA_PATH/Inst_BANC_REG/Banc(0)
 add wave -radix hexadecimal -label "R1 (Pointeur)"     UUT/Inst_DATA_PATH/Inst_BANC_REG/Banc(1)
 add wave -radix hexadecimal -label "R2 (Accumulateur)" UUT/Inst_DATA_PATH/Inst_BANC_REG/Banc(2)
+add wave -radix hexadecimal   UUT/s_RegAff_val
+
+add wave -divider " Affichage HEX "
+add wave -radix binary -label "s_RegAff_val" UUT/s_RegAff_val
+add wave -radix binary -label "HEX0" UUT/HEX0
+add wave -radix binary -label "HEX1" UUT/HEX1
+add wave -radix binary -label "HEX2" UUT/HEX2
+add wave -radix binary -label "HEX3" UUT/HEX3
 
 # 5. Lancement de l'exécution
 run 3000 ns
