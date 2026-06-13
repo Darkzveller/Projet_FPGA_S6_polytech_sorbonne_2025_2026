@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Jun 11 17:30:33 2026
+Fitter Status : Successful - Fri Jun 12 11:03:50 2026
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : mono_multi_cycle
 Top-level Entity Name : proc_mono_cycle
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 3,130 / 49,760 ( 6 % )
-    Total combinational functions : 2,064 / 49,760 ( 4 % )
+Total logic elements : 3,158 / 49,760 ( 6 % )
+    Total combinational functions : 2,071 / 49,760 ( 4 % )
     Dedicated logic registers : 2,327 / 49,760 ( 5 % )
 Total registers : 2327
 Total pins : 31 / 360 ( 9 % )

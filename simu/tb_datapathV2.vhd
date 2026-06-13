@@ -53,7 +53,9 @@ begin
         ALUSrc   => ALUSrc,
         MemWr    => MemWr,
         MemToReg => MemToReg,
-        ImmExtin => ImmExtin
+        ImmExtin => ImmExtin,
+        RegAff_en => '0',
+        RegAff_out => open
     );
 
     --------------------------------------------------------------------

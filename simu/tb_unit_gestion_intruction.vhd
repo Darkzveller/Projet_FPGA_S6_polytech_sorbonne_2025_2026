@@ -63,9 +63,6 @@ begin
         nPCsel <= '1';
         wait for T; -- Au front montant, le saut est effectué
 
-        --------------------------------------------------
-        -- 4. RETOUR AU MODE LINEAIRE
-        --------------------------------------------------
         -- On désactive le saut pour voir si le PC reprend sa marche linéaire (+1)
         -- à partir de sa nouvelle adresse.
         nPCsel <= '0';

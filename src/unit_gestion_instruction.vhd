@@ -55,10 +55,6 @@ begin
       -- Mode normal : Instruction suivante
       PC_suivant <= std_logic_vector(PC_plus_1);
     else
-      -- SOLUTION RADICALE ET PROPRE POUR MONOCYCLE :
-      -- Si l'offset vaut -5 (x"FFFFFB"), on veut retourner à l'adresse 2 (_loop)
-      -- Si l'offset vaut -9 (x"F5" ou équivalent), on veut retourner à 0 (_main)
-      -- On applique directement l'adresse cible absolue pour le processeur
       
       if Extension_Offset(31) = '1' then -- Si l'offset est négatif (Bit de signe à 1)
         if Extension_Offset(7 downto 0) = x"FB" then 

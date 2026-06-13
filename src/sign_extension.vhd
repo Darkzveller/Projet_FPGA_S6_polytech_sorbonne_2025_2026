@@ -22,7 +22,7 @@ begin
         -- Copie de l'entrÃ©e sur les N premier bits
         S(N_bits_E-1 downto 0) <= E;
         -- Extension du signe
-        -- S(31 downto N_bits_E) <= (others => E(N_bits_E-1));
-S(31 downto N_bits_E) <= (others => E(E'high)); -- E'high prend automatiquement le bit de poids fort réel du signal injecté
+        S(31 downto N_bits_E) <= (others => E(N_bits_E-1));
+-- S(31 downto N_bits_E) <= (others => E(E'high)); -- E'high prend automatiquement le bit de poids fort réel du signal injecté
     end process;
 end Behavioral;

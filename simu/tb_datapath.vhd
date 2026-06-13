@@ -23,9 +23,21 @@ begin
     -- Instanciation de l'unité de traitement
     UUT: entity work.DataPath
         port map (
-            CLK => CLK, RST => RST, RegWr => RegWr,
-            RW => RW, RA => RA, RB => RB,
-            ALUCtr => ALUCtr, N_flag => N_flag, Z_flag => Z_flag
+            CLK => CLK, 
+            RST => RST, 
+            RegWr => RegWr,
+            RW => RW, 
+            RA => RA, 
+            RB => RB,
+            ALUCtr => ALUCtr, 
+            N_flag => N_flag, 
+            Z_flag => Z_flag,
+            ALUSrc     => '0',
+            MemWr      => '0',
+            MemToReg   => '0',
+            ImmExtin   => (others => '0'),
+            RegAff_en  => '0',
+            RegAff_out => open
         );
 
     -- Génération de l'horloge

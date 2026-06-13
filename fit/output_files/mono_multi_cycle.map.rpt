@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mono_multi_cycle
-Thu Jun 11 17:29:09 2026
+Fri Jun 12 11:02:35 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -52,13 +52,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 11 17:29:09 2026       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 12 11:02:35 2026       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; mono_multi_cycle                            ;
 ; Top-level Entity Name              ; proc_mono_cycle                             ;
 ; Family                             ; MAX 10                                      ;
 ; Total logic elements               ; 4,298                                       ;
-;     Total combinational functions  ; 2,064                                       ;
+;     Total combinational functions  ; 2,071                                       ;
 ;     Dedicated logic registers      ; 2,327                                       ;
 ; Total registers                    ; 2327                                        ;
 ; Total pins                         ; 31                                          ;
@@ -165,7 +165,7 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -173,31 +173,31 @@ refer to the applicable agreement for further details.
 ;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-;     Processor 7            ;   0.1%      ;
-;     Processor 8            ;   0.1%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
 ;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                              ;
-+-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                    ; Library ;
-+-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
-; ../src/unit_gestion_instruction.vhd ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd ;         ;
-; ../src/sign_extension.vhd           ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/sign_extension.vhd           ;         ;
-; ../src/SEVEN_SEG.vhd                ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/SEVEN_SEG.vhd                ;         ;
-; ../src/proc_mono_cycle.vhd          ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd          ;         ;
-; ../src/mul_2_to_1.vhd               ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/mul_2_to_1.vhd               ;         ;
-; ../src/memory_data.vhd              ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/memory_data.vhd              ;         ;
-; ../src/instruction_memory.vhd       ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/instruction_memory.vhd       ;         ;
-; ../src/decodeur.vhd                 ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/decodeur.vhd                 ;         ;
-; ../src/datapath.vhd                 ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd                 ;         ;
-; ../src/banc_registre.vhd            ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/banc_registre.vhd            ;         ;
-; ../src/alu.vhd                      ; yes             ; User VHDL File  ; C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/alu.vhd                      ;         ;
-+-------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                       ;
++-------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path    ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                             ; Library ;
++-------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../src/unit_gestion_instruction.vhd ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd ;         ;
+; ../src/sign_extension.vhd           ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/sign_extension.vhd           ;         ;
+; ../src/SEVEN_SEG.vhd                ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/SEVEN_SEG.vhd                ;         ;
+; ../src/proc_mono_cycle.vhd          ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd          ;         ;
+; ../src/mul_2_to_1.vhd               ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/mul_2_to_1.vhd               ;         ;
+; ../src/memory_data.vhd              ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd              ;         ;
+; ../src/instruction_memory.vhd       ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/instruction_memory.vhd       ;         ;
+; ../src/decodeur.vhd                 ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/decodeur.vhd                 ;         ;
+; ../src/datapath.vhd                 ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd                 ;         ;
+; ../src/banc_registre.vhd            ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/banc_registre.vhd            ;         ;
+; ../src/alu.vhd                      ; yes             ; User VHDL File  ; H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/alu.vhd                      ;         ;
++-------------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -207,14 +207,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Estimated Total logic elements              ; 4,298     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2064      ;
+; Total combinational functions               ; 2071      ;
 ; Logic element usage by number of LUT inputs ;           ;
 ;     -- 4 input functions                    ; 1939      ;
 ;     -- 3 input functions                    ; 65        ;
-;     -- <=2 input functions                  ; 60        ;
+;     -- <=2 input functions                  ; 67        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2027      ;
+;     -- normal mode                          ; 2034      ;
 ;     -- arithmetic mode                      ; 37        ;
 ;                                             ;           ;
 ; Total registers                             ; 2327      ;
@@ -227,7 +227,7 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 2327      ;
-; Total fan-out                               ; 17419     ;
+; Total fan-out                               ; 17426     ;
 ; Average fan-out                             ; 3.91      ;
 +---------------------------------------------+-----------+
 
@@ -237,12 +237,12 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                             ; Entity Name              ; Library Name ;
 +----------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------+--------------------------+--------------+
-; |proc_mono_cycle                                         ; 2064 (3)            ; 2327 (1)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 31   ; 0            ; 0          ; |proc_mono_cycle                                                                                                ; proc_mono_cycle          ; work         ;
+; |proc_mono_cycle                                         ; 2071 (3)            ; 2327 (1)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 31   ; 0            ; 0          ; |proc_mono_cycle                                                                                                ; proc_mono_cycle          ; work         ;
 ;    |DECODEUR:Inst_DECODEUR|                              ; 18 (18)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DECODEUR:Inst_DECODEUR                                                                         ; DECODEUR                 ; work         ;
-;    |DataPath:Inst_DATA_PATH|                             ; 1942 (0)            ; 2320 (16)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH                                                                        ; DataPath                 ; work         ;
+;    |DataPath:Inst_DATA_PATH|                             ; 1949 (0)            ; 2320 (16)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH                                                                        ; DataPath                 ; work         ;
 ;       |ALU:Inst_ALU|                                     ; 83 (83)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH|ALU:Inst_ALU                                                           ; ALU                      ; work         ;
 ;       |BANC_REGISTRE:Inst_BANC_REG|                      ; 336 (336)           ; 256 (256)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH|BANC_REGISTRE:Inst_BANC_REG                                            ; BANC_REGISTRE            ; work         ;
-;       |DATA_MEMORY:Inst_MEM|                             ; 92 (92)             ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM                                                   ; DATA_MEMORY              ; work         ;
+;       |DATA_MEMORY:Inst_MEM|                             ; 99 (99)             ; 2048 (2048)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM                                                   ; DATA_MEMORY              ; work         ;
 ;       |MUL_2_TO_1:Inst_MUL_2_TO_1_1|                     ; 1402 (1402)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH|MUL_2_TO_1:Inst_MUL_2_TO_1_1                                           ; MUL_2_TO_1               ; work         ;
 ;       |MUL_2_TO_1:Inst_MUL_2_TO_1_2|                     ; 29 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|DataPath:Inst_DATA_PATH|MUL_2_TO_1:Inst_MUL_2_TO_1_2                                           ; MUL_2_TO_1               ; work         ;
 ;    |MUL_2_TO_1:Inst_MUL_2_TO_1_REGB|                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |proc_mono_cycle|MUL_2_TO_1:Inst_MUL_2_TO_1_REGB                                                                ; MUL_2_TO_1               ; work         ;
@@ -554,17 +554,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[17][1]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[22][1]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[18][1]         ; 1       ;
+; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][1]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[25][1]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[26][1]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[21][2]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[22][2]         ; 1       ;
+; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][2]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[20][2]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[19][2]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[26][3]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[25][3]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[24][3]         ; 1       ;
 ; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[23][3]         ; 1       ;
-; Total number of inverted registers = 22                         ;         ;
+; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][3]         ; 1       ;
+; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][4]         ; 1       ;
+; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][5]         ; 1       ;
+; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][6]         ; 1       ;
+; DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][7]         ; 1       ;
+; Total number of inverted registers = 29                         ;         ;
 +-----------------------------------------------------------------+---------+
 
 
@@ -664,18 +671,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 1                           ;
 ;     CLR SLD           ; 6                           ;
 ;     ENA CLR           ; 2320                        ;
-; cycloneiii_lcell_comb ; 2068                        ;
+; cycloneiii_lcell_comb ; 2075                        ;
 ;     arith             ; 37                          ;
 ;         3 data inputs ; 37                          ;
-;     normal            ; 2031                        ;
+;     normal            ; 2038                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 26                          ;
+;         1 data inputs ; 33                          ;
 ;         2 data inputs ; 37                          ;
 ;         3 data inputs ; 28                          ;
 ;         4 data inputs ; 1939                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 17.50                       ;
-; Average LUT depth     ; 10.34                       ;
+; Average LUT depth     ; 10.33                       ;
 +-----------------------+-----------------------------+
 
 
@@ -694,63 +701,71 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Jun 11 17:28:51 2026
+    Info: Processing started: Fri Jun 12 11:01:59 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mono_multi_cycle -c mono_multi_cycle
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/unit_gestion_instruction.vhd
-    Info (12022): Found design unit 1: UNIT_GESTION_INSTRUCTION-RTL File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 15
-    Info (12023): Found entity 1: UNIT_GESTION_INSTRUCTION File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/sign_extension.vhd
-    Info (12022): Found design unit 1: SIGN_EXTENSION-Behavioral File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/sign_extension.vhd Line: 16
-    Info (12023): Found entity 1: SIGN_EXTENSION File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/sign_extension.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/seven_seg.vhd
-    Info (12022): Found design unit 1: SEVEN_SEG-COMB File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/SEVEN_SEG.vhd Line: 39
-    Info (12023): Found entity 1: SEVEN_SEG File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/SEVEN_SEG.vhd Line: 31
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/proc_mono_cycle.vhd
-    Info (12022): Found design unit 1: proc_mono_cycle-rtl File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 17
-    Info (12023): Found entity 1: proc_mono_cycle File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/mul_2_to_1.vhd
-    Info (12022): Found design unit 1: MUL_2_TO_1-Behavioral File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/mul_2_to_1.vhd Line: 17
-    Info (12023): Found entity 1: MUL_2_TO_1 File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/mul_2_to_1.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/memory_data.vhd
-    Info (12022): Found design unit 1: DATA_MEMORY-Behavioral File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/memory_data.vhd Line: 17
-    Info (12023): Found entity 1: DATA_MEMORY File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/memory_data.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/instruction_memory.vhd
-    Info (12022): Found design unit 1: instruction_memory-RTL File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/instruction_memory.vhd Line: 11
-    Info (12023): Found entity 1: instruction_memory File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/instruction_memory.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/decodeur.vhd
-    Info (12022): Found design unit 1: DECODEUR-RTL File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/decodeur.vhd Line: 22
-    Info (12023): Found entity 1: DECODEUR File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/decodeur.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/datapath.vhd
-    Info (12022): Found design unit 1: DataPath-Structural File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd Line: 27
-    Info (12023): Found entity 1: DataPath File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/banc_registre.vhd
-    Info (12022): Found design unit 1: BANC_REGISTRE-Behavioral File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/banc_registre.vhd Line: 19
-    Info (12023): Found entity 1: BANC_REGISTRE File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/banc_registre.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /users/elkat/desktop/projet_mono_multi_cycle/src/alu.vhd
-    Info (12022): Found design unit 1: ALU-Behavioral File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/alu.vhd Line: 16
-    Info (12023): Found entity 1: ALU File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/alu.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/unit_gestion_instruction.vhd
+    Info (12022): Found design unit 1: UNIT_GESTION_INSTRUCTION-RTL File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 15
+    Info (12023): Found entity 1: UNIT_GESTION_INSTRUCTION File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/sign_extension.vhd
+    Info (12022): Found design unit 1: SIGN_EXTENSION-Behavioral File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/sign_extension.vhd Line: 16
+    Info (12023): Found entity 1: SIGN_EXTENSION File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/sign_extension.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/seven_seg.vhd
+    Info (12022): Found design unit 1: SEVEN_SEG-COMB File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/SEVEN_SEG.vhd Line: 39
+    Info (12023): Found entity 1: SEVEN_SEG File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/SEVEN_SEG.vhd Line: 31
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/proc_mono_cycle.vhd
+    Info (12022): Found design unit 1: proc_mono_cycle-rtl File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 17
+    Info (12023): Found entity 1: proc_mono_cycle File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/mul_2_to_1.vhd
+    Info (12022): Found design unit 1: MUL_2_TO_1-Behavioral File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/mul_2_to_1.vhd Line: 17
+    Info (12023): Found entity 1: MUL_2_TO_1 File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/mul_2_to_1.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/memory_data.vhd
+    Info (12022): Found design unit 1: DATA_MEMORY-Behavioral File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 17
+    Info (12023): Found entity 1: DATA_MEMORY File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/instruction_memory.vhd
+    Info (12022): Found design unit 1: instruction_memory-RTL File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/instruction_memory.vhd Line: 11
+    Info (12023): Found entity 1: instruction_memory File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/instruction_memory.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/decodeur.vhd
+    Info (12022): Found design unit 1: DECODEUR-RTL File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/decodeur.vhd Line: 22
+    Info (12023): Found entity 1: DECODEUR File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/decodeur.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/datapath.vhd
+    Info (12022): Found design unit 1: DataPath-Structural File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd Line: 27
+    Info (12023): Found entity 1: DataPath File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/banc_registre.vhd
+    Info (12022): Found design unit 1: BANC_REGISTRE-Behavioral File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/banc_registre.vhd Line: 19
+    Info (12023): Found entity 1: BANC_REGISTRE File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/banc_registre.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /mon drive/2025-2026_polytech_sorbonne/s6/ue-electronique/vhdl_comportemental/projet_mono_multi_cycle/src/alu.vhd
+    Info (12022): Found design unit 1: ALU-Behavioral File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/alu.vhd Line: 16
+    Info (12023): Found entity 1: ALU File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/alu.vhd Line: 5
 Info (12127): Elaborating entity "proc_mono_cycle" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at proc_mono_cycle.vhd(39): object "s_WrSrc" assigned a value but never read File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 39
-Info (12128): Elaborating entity "UNIT_GESTION_INSTRUCTION" for hierarchy "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 58
-Info (12128): Elaborating entity "instruction_memory" for hierarchy "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION|instruction_memory:Inst_INSTRUCTION_MEMORY" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 22
-Info (12128): Elaborating entity "SIGN_EXTENSION" for hierarchy "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION|SIGN_EXTENSION:Inst_EXT" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 29
-Info (12128): Elaborating entity "DECODEUR" for hierarchy "DECODEUR:Inst_DECODEUR" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 67
-Info (12128): Elaborating entity "MUL_2_TO_1" for hierarchy "MUL_2_TO_1:Inst_MUL_2_TO_1_REGB" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 83
-Info (12128): Elaborating entity "DataPath" for hierarchy "DataPath:Inst_DATA_PATH" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 94
-Info (12128): Elaborating entity "BANC_REGISTRE" for hierarchy "DataPath:Inst_DATA_PATH|BANC_REGISTRE:Inst_BANC_REG" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd Line: 46
-Info (12128): Elaborating entity "ALU" for hierarchy "DataPath:Inst_DATA_PATH|ALU:Inst_ALU" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd Line: 60
-Info (12128): Elaborating entity "MUL_2_TO_1" for hierarchy "DataPath:Inst_DATA_PATH|MUL_2_TO_1:Inst_MUL_2_TO_1_1" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd Line: 71
-Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd Line: 87
-Warning (10492): VHDL Process Statement warning at memory_data.vhd(42): signal "Reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
-Info (12128): Elaborating entity "SIGN_EXTENSION" for hierarchy "DataPath:Inst_DATA_PATH|SIGN_EXTENSION:Inst_EXT" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/datapath.vhd Line: 98
-Info (12128): Elaborating entity "SEVEN_SEG" for hierarchy "SEVEN_SEG:Inst_HEX0" File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 126
+Warning (10036): Verilog HDL or VHDL warning at proc_mono_cycle.vhd(39): object "s_WrSrc" assigned a value but never read File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 39
+Info (12128): Elaborating entity "UNIT_GESTION_INSTRUCTION" for hierarchy "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 58
+Info (12128): Elaborating entity "instruction_memory" for hierarchy "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION|instruction_memory:Inst_INSTRUCTION_MEMORY" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 22
+Info (12128): Elaborating entity "SIGN_EXTENSION" for hierarchy "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION|SIGN_EXTENSION:Inst_EXT" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/unit_gestion_instruction.vhd Line: 29
+Info (12128): Elaborating entity "DECODEUR" for hierarchy "DECODEUR:Inst_DECODEUR" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 67
+Info (12128): Elaborating entity "MUL_2_TO_1" for hierarchy "MUL_2_TO_1:Inst_MUL_2_TO_1_REGB" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 83
+Info (12128): Elaborating entity "DataPath" for hierarchy "DataPath:Inst_DATA_PATH" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 94
+Info (12128): Elaborating entity "BANC_REGISTRE" for hierarchy "DataPath:Inst_DATA_PATH|BANC_REGISTRE:Inst_BANC_REG" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd Line: 46
+Info (12128): Elaborating entity "ALU" for hierarchy "DataPath:Inst_DATA_PATH|ALU:Inst_ALU" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd Line: 60
+Info (12128): Elaborating entity "MUL_2_TO_1" for hierarchy "DataPath:Inst_DATA_PATH|MUL_2_TO_1:Inst_MUL_2_TO_1_1" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd Line: 71
+Info (12128): Elaborating entity "DATA_MEMORY" for hierarchy "DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd Line: 87
+Warning (10492): VHDL Process Statement warning at memory_data.vhd(42): signal "Reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
+Info (12128): Elaborating entity "SIGN_EXTENSION" for hierarchy "DataPath:Inst_DATA_PATH|SIGN_EXTENSION:Inst_EXT" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/datapath.vhd Line: 98
+Info (12128): Elaborating entity "SEVEN_SEG" for hierarchy "SEVEN_SEG:Inst_HEX0" File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/proc_mono_cycle.vhd Line: 126
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276013): RAM logic "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION|instruction_memory:Inst_INSTRUCTION_MEMORY|mem" is uninferred because MIF is not supported for the selected family File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/instruction_memory.vhd Line: 40
-Info (13000): Registers with preset signals will power-up high File: C:/Users/elkat/Desktop/Projet_mono_multi_cycle/src/banc_registre.vhd Line: 49
+    Info (276013): RAM logic "UNIT_GESTION_INSTRUCTION:Inst_UNIT_GEST_INSTRUCTION|instruction_memory:Inst_INSTRUCTION_MEMORY|mem" is uninferred because MIF is not supported for the selected family File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/instruction_memory.vhd Line: 40
+Info (13000): Registers with preset signals will power-up high File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/banc_registre.vhd Line: 49
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][1] will power up to High File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
+    Critical Warning (18010): Register DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][2] will power up to High File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
+    Critical Warning (18010): Register DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][3] will power up to High File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
+    Critical Warning (18010): Register DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][4] will power up to High File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
+    Critical Warning (18010): Register DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][5] will power up to High File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
+    Critical Warning (18010): Register DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][6] will power up to High File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
+    Critical Warning (18010): Register DataPath:Inst_DATA_PATH|DATA_MEMORY:Inst_MEM|MEM[16][7] will power up to High File: H:/Mon Drive/2025-2026_polytech_sorbonne/S6/UE-Electronique/VHDL_Comportemental/Projet_mono_multi_cycle/src/memory_data.vhd Line: 42
 Info (17049): 26 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -758,10 +773,10 @@ Info (21057): Implemented 4393 device resources after synthesis - the final reso
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 28 output pins
     Info (21061): Implemented 4362 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Thu Jun 11 17:29:09 2026
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4862 megabytes
+    Info: Processing ended: Fri Jun 12 11:02:35 2026
+    Info: Elapsed time: 00:00:36
+    Info: Total CPU time (on all processors): 00:00:32
 
 

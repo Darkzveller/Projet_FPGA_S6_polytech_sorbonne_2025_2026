@@ -27,7 +27,7 @@ add wave -radix hexadecimal UUT/BusW
 
 # --- ALIAS POUR LES REGISTRES ---
 # On va chercher directement dans le signal "Banc" à l'intérieur de l'instance
-add wave -divider " Registres Internes "
+add wave -divider " Banc de Registres Internes "
 add wave -noupdate -format Literal -radix hexadecimal -label R1  {/UUT/Inst_BANC_REG/Banc(1)}
 add wave -noupdate -format Literal -radix hexadecimal -label R2  {/UUT/Inst_BANC_REG/Banc(2)}
 add wave -noupdate -format Literal -radix hexadecimal -label R3  {/UUT/Inst_BANC_REG/Banc(3)}

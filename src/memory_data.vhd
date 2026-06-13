@@ -21,7 +21,7 @@ architecture Behavioral of DATA_MEMORY is
 
   -- signal MEM : mem_type := (others => (others => '1'));
 signal MEM : mem_type := (
-    16     => x"00000001", -- Adresse 0x10
+    16     => x"000000FF", -- Adresse 0x10
     17     => x"00000002", -- Adresse 0x11
     18     => x"00000003", -- Adresse 0x12
     19     => x"00000004", -- Adresse 0x13
@@ -42,7 +42,7 @@ begin
     if Reset = '1' then
       -- MEM <= (others => (others => '1'));
 MEM <= (
-        16     => x"00000001",
+        16     => x"000000FF",
         17     => x"00000002",
         18     => x"00000003",
         19     => x"00000004",
