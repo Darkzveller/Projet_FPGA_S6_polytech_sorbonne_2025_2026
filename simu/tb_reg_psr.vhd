@@ -1,3 +1,4 @@
+-- Non utiliser dans ce projet
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -31,7 +32,7 @@ begin
         );
 
     --------------------------------------------------------------------
-    -- GÃ©nÃ©ration horloge
+    -- Génération horloge
     --------------------------------------------------------------------
     clk_process : process
     begin
@@ -65,26 +66,26 @@ begin
         ----------------------------------------------------------------
         DATA_IN <= x"AAAA5555";
 
-        -- laisser 3 cycles sans Ã©criture (PSREn = 0)
+        -- laisser 3 cycles sans écriture (PSREn = 0)
         PSREn <= '0';
 
         wait for 3 * CLK_PERIOD;
 
         ----------------------------------------------------------------
-        -- 3. VÃ©rifier que DATA_OUT n'a PAS changÃ©
+        -- 3. Véifier que DATA_OUT n'a PAS changé
         ----------------------------------------------------------------
         assert DATA_OUT = x"00000000"
         report "Erreur : DATA_OUT a change alors que PSREn=0"
         severity warning;
 
         ----------------------------------------------------------------
-        -- 4. Activer Ã©criture
+        -- 4. Activer écriture
         ----------------------------------------------------------------
         PSREn <= '1';
         wait for CLK_PERIOD;
 
         ----------------------------------------------------------------
-        -- 5. VÃ©rifier que DATA_OUT prend DATA_IN
+        -- 5. Vérifier que DATA_OUT prend DATA_IN
         ----------------------------------------------------------------
         assert DATA_OUT = x"AAAA5555"
         report "Erreur : DATA_OUT n'a pas capture DATA_IN"
