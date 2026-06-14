@@ -20,7 +20,7 @@ entity DECODEUR is
 end entity;
 
 architecture RTL of DECODEUR is
-  type enum_instruction is (MOV, ADDi, ADDr, CMPi, CMPr, LDR, STR, BAL, BLT, UNKNOWN);
+  type enum_instruction is (MOV, ADDi, ADDr, CMP, LDR, STR, BAL, BLT, UNKNOWN);
   signal instr_courante : enum_instruction;
   
   signal cond   : std_logic_vector(3 downto 0);
@@ -33,17 +33,17 @@ begin
   cond   <= instruction(31 downto 28);
   bit_I  <= instruction(25);
   opcode <= instruction(24 downto 21);
-  flag_N <= Flags_NZCV(3); -- Le bit N (Negative) est bien le bit 3
+  flag_N <= Flags_NZCV(3); -- Le bit N (Negative) est le bit 3
 
   ---------------------------------------------------------------------------
   -- Processus 1 : Identification de l'instruction courante
   ---------------------------------------------------------------------------
   process (instruction, cond, opcode, bit_I)
   begin
-    -- Valeur par d√©faut pour √©viter les blocages du simulateur
+    -- Valeur par dÈfaut pour Èviter les blocages du simulateur
     instr_courante <= UNKNOWN; 
 
-    -- Cas des sauts (Branchements) : prioritaires sur la condition "AL" g√©n√©rale
+    -- Cas des sauts (Branchements) : prioritaires sur la condition "AL" gÈnÈrale
     if instruction(27 downto 25) = "101" then
       if cond = "1110" then
         instr_courante <= BAL; 
@@ -51,7 +51,7 @@ begin
         instr_courante <= BLT; 
       end if;
 
-    -- Cas des acc√®s m√©moires LDR / STR
+    -- Cas des acc√®s mÈmoires LDR / STR
     elsif instruction(27 downto 26) = "01" then
       if instruction(20) = '1' then
         instr_courante <= LDR;
@@ -59,16 +59,12 @@ begin
         instr_courante <= STR;
       end if;
 
-    -- Cas des instructions de traitement de donn√©es (Condition AL = "1110")
+    -- Cas des instructions de traitement de donnÈes (Condition AL = "1110")
     elsif cond = "1110" then 
       case opcode is
         when "1101" => instr_courante <= MOV;
         when "1010" =>
-          if bit_I = '1' then
-            instr_courante <= CMPi;
-          else
-            instr_courante <= CMPr;
-          end if;
+            instr_courante <= CMP;
         when "0100" =>
           if bit_I = '1' then
             instr_courante <= ADDi; 
@@ -81,12 +77,12 @@ begin
   end process;
 
   ---------------------------------------------------------------------------
-  -- Processus 2 : G√©n√©ration des signaux de contr√¥le (S√âCURIS√â)
+  -- Processus 2 : GÈnÈration des signaux de contr√¥le (S√âCURIS√â)
   ---------------------------------------------------------------------------
   process (instr_courante, flag_N)
   begin
-    -- CORRECTION : Initialisation syst√©matique de TOUTES les sorties √† '0'
-    -- pour √©viter la cr√©ation de Latchs (m√©moires parasites).
+    -- CORRECTION : Initialisation systÈmatique de TOUTES les sorties √† '0'
+    -- pour Èviter la crÈation de Latchs (mÈmoires parasites).
     nPC_SEL  <= '0';
     PSREn    <= '0';
     RegWr    <= '0';
@@ -101,56 +97,50 @@ begin
     case instr_courante is
       when MOV =>
         RegWr   <= '1'; 
-        ALUSrc  <= '1'; -- S√©lectionne l'imm√©diat √©tendu
-        ALUCtrl <= "001"; -- CORRECTION : "01" sur les bits faibles = Passage de B (l'imm√©diat)
+        ALUSrc  <= '1'; -- SÈlectionne l'immÈdiat Ètendu
+        ALUCtrl <= "001"; 
 
       when ADDi =>
         RegWr   <= '1'; 
-        ALUSrc  <= '1'; -- Entr√©e B de l'ALU = Imm√©diat
+        ALUSrc  <= '1'; -- EntrÈe B de l'ALU = ImmÈdiat
         ALUCtrl <= "000"; -- "00" = Addition
 
       when ADDr =>
         RegWr   <= '1'; 
-        ALUSrc  <= '0'; -- Entr√©e B de l'ALU = Registre Rm
+        ALUSrc  <= '0'; -- EntrÈe B de l'ALU = Registre Rm
         ALUCtrl <= "000"; -- "00" = Addition
-
-      when CMPi =>
-        PSREn   <= '1'; -- On autorise la mise √† jour des drapeaux (PSR)
-        ALUSrc  <= '1'; -- Entr√©e B de l'ALU = Imm√©diat
-        ALUCtrl <= "010"; -- CORRECTION : "10" sur les bits faibles = Soustraction (A - B)
-
-      when CMPr =>
-        PSREn   <= '1'; -- On autorise la mise √† jour des drapeaux (PSR)
-        ALUSrc  <= '0'; -- Entr√©e B de l'ALU = Registre Rm
-        ALUCtrl <= "010"; -- CORRECTION : "10" sur les bits faibles = Soustraction (A - B)
+      when CMP =>
+        PSREn   <= '1'; -- On autorise la mise ‡† jour des drapeaux (PSR)
+        ALUSrc  <= '1'; -- EntrÈe B de l'ALU = ImmÈdiat
+        ALUCtrl <= "010"; 
 
       when LDR =>
         RegWr    <= '1'; 
         RegSel   <= '0'; 
-        ALUSrc   <= '1'; -- Calcul d'adresse : Base + Offset imm√©diat
-        ALUCtrl  <= "000"; -- L'adresse est calcul√©e par une Addition
+        ALUSrc   <= '1'; -- Calcul d'adresse : Base + Offset immÈdiat
+        ALUCtrl  <= "000"; -- L'adresse est calculÈe par une Addition
         WrSrc    <= '1'; 
         MemToReg <= '1'; 
 
       when STR =>
-        MemWr   <= '1'; -- √âcriture active dans la m√©moire
+        MemWr   <= '1'; -- Ecriture active dans la mÈmoire
         RegSel  <= '1'; -- Rd devient la source lue sur le port RB du banc
-        ALUSrc  <= '1'; -- Calcul d'adresse via Imm√©diat
+        ALUSrc  <= '1'; -- Calcul d'adresse via ImmÈdiat
         ALUCtrl <= "000"; -- Addition
         RegAff  <= '1'; 
 
       when BAL =>
-        nPC_SEL <= '1'; -- Saut inconditionnel forc√©
+        nPC_SEL <= '1'; -- Saut inconditionnel forcÈ
 
       when BLT =>
         if flag_N = '1' then
-          nPC_SEL <= '1'; -- Saut si le r√©sultat pr√©c√©dent √©tait n√©gatif
+          nPC_SEL <= '1'; -- Saut si le rÈsultat prÈcÈdent Ètait nÈgatif
         else
           nPC_SEL <= '0';
         end if;
 
       when others =>
-        null; -- Reste aux valeurs par d√©faut s√©curis√©es
+        null; -- Choisi Uknow par dÈfaut
     end case;
   end process;
 

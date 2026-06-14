@@ -7,14 +7,14 @@ entity ALU is
         OP : in  STD_LOGIC_VECTOR (1 downto 0); -- Commande
         A  : in  STD_LOGIC_VECTOR (31 downto 0);
         B  : in  STD_LOGIC_VECTOR (31 downto 0);
-        S  : out STD_LOGIC_VECTOR (31 downto 0); -- RÃ©sultat
-        N  : out STD_LOGIC;                      -- Drapeau NÃ©gatif
-        Z  : out STD_LOGIC                       -- Drapeau ZÃ©ro
+        S  : out STD_LOGIC_VECTOR (31 downto 0); -- Résultat
+        N  : out STD_LOGIC;                      -- Drapeau Négatif
+        Z  : out STD_LOGIC                       -- Drapeau Zé©ro
     );
 end ALU;
 
 architecture Behavioral of ALU is
-    -- Signal intermÃ©diaire pour faciliter le calcul des drapeaux
+    -- Signal intermédiaire pour faciliter le calcul des drapeaux
     signal result_internal : STD_LOGIC_VECTOR (31 downto 0):= (others => '0');
 
 begin
@@ -44,7 +44,7 @@ begin
     S <= result_internal;
 
     -- Gestion des drapeaux
-    -- N = 1 si le bit de poids fort (MSB) est Ã  1 (dÃ©finition du complÃ©ment Ã  2)
+    -- N = 1 si le bit de poids fort (MSB) est Ã  1 (définition du complément Ã  2)
     N <= result_internal(31);
 
     -- Z = 1 si tous les bits sont Ã  0

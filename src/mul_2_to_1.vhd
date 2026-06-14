@@ -8,8 +8,8 @@ entity MUL_2_TO_1 is
 
     Port (
         COM : in  STD_LOGIC;                    -- Commande
-        A  : in  STD_LOGIC_VECTOR (N_bits-1 downto 0); -- Bus de donnÃ©es sur N bits
-        B  : in  STD_LOGIC_VECTOR (N_bits-1 downto 0); -- Bus de donnÃ©es sur N bits
+        A  : in  STD_LOGIC_VECTOR (N_bits-1 downto 0); -- Bus de données sur N bits
+        B  : in  STD_LOGIC_VECTOR (N_bits-1 downto 0); -- Bus de données sur N bits
         S  : out  STD_LOGIC_VECTOR (N_bits-1 downto 0)  -- Bus de sortie du multiplexeur sur N bits
     );
 end MUL_2_TO_1;
@@ -17,7 +17,7 @@ end MUL_2_TO_1;
 architecture Behavioral of MUL_2_TO_1 is
 
 begin
-    -- SÃ©lectionne le bus de donnÃ©es sur N bits
+    -- Sélectionne le bus de données sur N bits
     S <= A when COM='0' else B;
 
 end Behavioral;

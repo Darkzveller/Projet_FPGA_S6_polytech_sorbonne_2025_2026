@@ -8,8 +8,8 @@ entity SIGN_EXTENSION is
         );
 
     Port (
-        E  : in  STD_LOGIC_VECTOR (N_bits_E-1 downto 0); -- Bus de donnÃ©es sur N bits
-        S  : out  STD_LOGIC_VECTOR (31 downto 0) -- Bus de donnÃ©es sur N bits
+        E  : in  STD_LOGIC_VECTOR (N_bits_E-1 downto 0); -- Bus de données sur N bits
+        S  : out  STD_LOGIC_VECTOR (31 downto 0) -- Bus de données sur N bits
     );
 end SIGN_EXTENSION;
 
@@ -19,10 +19,9 @@ begin
     process(E)
     begin
 
-        -- Copie de l'entrÃ©e sur les N premier bits
+        -- Copie de l'entree sur les N premier bits
         S(N_bits_E-1 downto 0) <= E;
         -- Extension du signe
         S(31 downto N_bits_E) <= (others => E(N_bits_E-1));
--- S(31 downto N_bits_E) <= (others => E(E'high)); -- E'high prend automatiquement le bit de poids fort réel du signal injecté
     end process;
 end Behavioral;

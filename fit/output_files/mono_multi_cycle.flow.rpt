@@ -1,5 +1,5 @@
 Flow report for mono_multi_cycle
-Sun Jun 14 16:32:27 2026
+Sun Jun 14 20:25:36 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jun 14 16:32:14 2026       ;
+; Flow Status                        ; Successful - Sun Jun 14 20:25:23 2026       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; mono_multi_cycle                            ;
 ; Top-level Entity Name              ; proc_mono_cycle                             ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,158 / 49,760 ( 6 % )                      ;
-;     Total combinational functions  ; 2,071 / 49,760 ( 4 % )                      ;
+; Total logic elements               ; 3,108 / 49,760 ( 6 % )                      ;
+;     Total combinational functions  ; 2,077 / 49,760 ( 4 % )                      ;
 ;     Dedicated logic registers      ; 2,327 / 49,760 ( 5 % )                      ;
 ; Total registers                    ; 2327                                        ;
 ; Total pins                         ; 31 / 360 ( 9 % )                            ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/14/2026 16:29:25 ;
+; Start date & time ; 06/14/2026 20:22:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mono_multi_cycle    ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+------------------+-----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name     ; Section Id ;
 +-------------------------------------+----------------------------------------+------------------+-----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 91765518116.178144736409680            ; --               ; --              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 91765518116.178146136516568            ; --               ; --              ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --               ; --              ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --               ; --              ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; proc_mono_cycle ; Top        ;
@@ -93,11 +93,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 4860 MB             ; 00:00:53                           ;
-; Fitter               ; 00:01:53     ; 1.4                     ; 6278 MB             ; 00:03:05                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 4691 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:11     ; 2.7                     ; 4949 MB             ; 00:00:18                           ;
-; Total                ; 00:02:51     ; --                      ; --                  ; 00:04:22                           ;
+; Analysis & Synthesis ; 00:00:42     ; 1.0                     ; 4864 MB             ; 00:00:55                           ;
+; Fitter               ; 00:01:41     ; 1.4                     ; 6271 MB             ; 00:02:50                           ;
+; Assembler            ; 00:00:07     ; 1.0                     ; 4691 MB             ; 00:00:06                           ;
+; Timing Analyzer      ; 00:00:10     ; 2.8                     ; 4945 MB             ; 00:00:18                           ;
+; Total                ; 00:02:40     ; --                      ; --                  ; 00:04:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

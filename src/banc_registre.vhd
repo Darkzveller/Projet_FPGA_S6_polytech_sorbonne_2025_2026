@@ -6,7 +6,7 @@ entity BANC_REGISTRE is
     Port (
         Clk   : in  STD_LOGIC;
         Reset : in  STD_LOGIC;
-        W     : in  STD_LOGIC_VECTOR (31 downto 0); -- Donn√©es √† √©crire
+        W     : in  STD_LOGIC_VECTOR (31 downto 0); -- Donn√©es ‡† Ècrire
         RA    : in  STD_LOGIC_VECTOR (3 downto 0);  -- Adresse lecture Port A
         RB    : in  STD_LOGIC_VECTOR (3 downto 0);  -- Adresse lecture Port B
         RW    : in  STD_LOGIC_VECTOR (3 downto 0);  -- Adresse √©criture
@@ -18,10 +18,10 @@ end BANC_REGISTRE;
 
 architecture Behavioral of BANC_REGISTRE is
 
-    -- D√©claration du type Tableau M√©moire (16 registres de 32 bits)
+    -- DÈclaration du type Tableau MÈ©moire (16 registres de 32 bits)
     type table is array(15 downto 0) of std_logic_vector(31 downto 0);
 
-    -- Fonction d'initialisation fournie dans l'√©nonc√©
+    -- Fonction d'initialisation fournie dans l'ÈnoncÈ
     function init_banc return table is
         variable result : table;
     begin
@@ -32,13 +32,13 @@ architecture Behavioral of BANC_REGISTRE is
         return result;
     end init_banc;
 
-    -- D√©claration et Initialisation du Banc de Registres
+    -- DÈclaration et Initialisation du Banc de Registres
     signal Banc : table := init_banc;
 
 begin
 
     -- Lecture asynchrone
-    -- Les sorties A et B r√©pondent imm√©diatement aux changements de RA et RB
+    -- Les sorties A et B rÈpondent immÈdiatement aux changements de RA et RB
     A <= Banc(to_integer(unsigned(RA)));
     B <= Banc(to_integer(unsigned(RB)));
 
@@ -47,7 +47,7 @@ begin
     process(Clk, Reset)
     begin
         if Reset = '1' then
-            -- On r√©initialise le banc
+            -- On rÈinitialise le banc
             Banc <= init_banc;
         elsif rising_edge(Clk) then
             if WE = '1' then

@@ -43,8 +43,8 @@ signal segments : std_logic_vector(0 to 6);
 begin
 
     with Data select
-        segments <= "1111110" when "0000", -- 0 (Tout sauf G)
-                    "0110000" when "0001", -- 1 (B et C)
+        segments <= "1111110" when "0000", -- 0 
+                    "0110000" when "0001", -- 1 
                     "1101101" when "0010", -- 2
                     "1111001" when "0011", -- 3
                     "0110011" when "0100", -- 4
@@ -60,7 +60,7 @@ begin
                     "1001111" when "1110", -- E
                     "1000111" when "1111", -- F
 
-                    "0000000" when others; -- Éteint
+                    "0000000" when others; -- Zteint
     process(segments, Pol)
     begin
         if Pol='1' then

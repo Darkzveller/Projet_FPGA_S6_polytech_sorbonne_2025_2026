@@ -15,12 +15,12 @@ architecture Behavioral of tb_datapath is
     signal ALUCtr  : STD_LOGIC_VECTOR(1 downto 0) := (others => '0');
     signal N_flag, Z_flag : STD_LOGIC;
 
-    -- PÃ©riode de l'horloge
+    -- Péiode de l'horloge
     constant period : time := 10 ns;
 
 begin
 
-    -- Instanciation de l'unitÃ© de traitement
+    -- Instanciation de l'unité de traitement
     UUT: entity work.DataPath
         port map (
             CLK => CLK, 
@@ -52,12 +52,12 @@ begin
         RST <= '0';
         wait for period;
 
-        -- 1. R(1) = R(15)  [Note: R(15) initialisÃ© Ã  0x30 dans ton code]
-        -- On passe R(15) Ã  travers l'ALU (OP="01" pour laisser passer B)
+        -- 1. R(1) = R(15)  [Normalement R(15) initialisé à 0x30 dans le code]
+        -- On passe R(15) à  travers l'ALU (OP="01" pour laisser passer B)
         RB <= "1111";      -- Lire R(15) sur BusB
         ALUCtr <= "01";    -- ALU sort B
         RW <= "0001";      -- Destination R(1)
-        RegWr <= '1';      -- Autoriser l'Ã©criture
+        RegWr <= '1';      -- Autoriser l'écriture
         wait for period;
         
         -- 2. R(1) = R(1) + R(15)  (0x30 + 0x30 = 0x60)
@@ -88,7 +88,7 @@ begin
         RW <= "0101";      -- Destination R(5)
         wait for period;
 
-        RegWr <= '0'; -- Fin des Ã©critures
+        RegWr <= '0'; -- Fin des écritures
         wait;
     end process;
 

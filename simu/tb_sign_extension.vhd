@@ -6,7 +6,7 @@ end TB_SIGN_EXTENSION;
 
 architecture Behavioral of TB_SIGN_EXTENSION is
 
-    -- ParamÃ¨tre de test
+    -- Paramètre de test
     constant N_bits_E : integer := 8;
 
     -- Signaux
@@ -33,15 +33,15 @@ begin
         E <= "00000101";
         wait for 10 ns;
 
-        -- Test 2 : nombre nÃ©gatif (11111011 = -5)
+        -- Test 2 : nombre négatif (11111011 = -5)
         E <= "11111011";
         wait for 10 ns;
 
-        -- Test 3 : autre valeur nÃ©gative
+        -- Test 3 : autre valeur négative
         E <= "10000001";
         wait for 10 ns;
 
-        -- Test 4 : zÃ©ro
+        -- Test 4 : zéro
         E <= "00000000";
         wait for 10 ns;
 
