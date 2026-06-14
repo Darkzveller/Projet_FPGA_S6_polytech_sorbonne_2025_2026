@@ -1,2 +1,2 @@
 
-git status && git add . && git commit -m "Peaufinage du" && git push
+git status && git add . && git commit -m "Rendue projet" && git push
