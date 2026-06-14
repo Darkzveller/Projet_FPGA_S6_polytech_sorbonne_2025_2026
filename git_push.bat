@@ -1,2 +1,2 @@
 
-git status && git add . && git commit -m "Rapport fini, faut faire la modification du registre de commande et a le mettre dans le rapport" && git push
+git status && git add . && git commit -m "Ajout de psr et son test bench + Reg aff et son test bench du datapaht + rapport presque finie" && git push
